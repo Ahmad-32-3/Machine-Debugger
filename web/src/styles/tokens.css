@@ -1,0 +1,85 @@
+/* machineDebugger theme. Steel/graphite, signal-cyan accent, sans display.
+   Deliberately not the CHB-MIT blue-serif editorial look. Dark only. */
+:root {
+  color-scheme: dark;
+
+  /* surfaces */
+  --bg-page: #0d1011;
+  --bg-sunk: #090b0c;
+  --bg-surface: #14181a;
+  --bg-raised: #161b1d;
+  --bg-accent-wash: #10302f;
+
+  /* hairlines */
+  --line-hairline: #1d2325;
+  --line-rule: #262d30;
+  --line-strong: #384245;
+
+  /* ink */
+  --fg-hi: #e9eeef;
+  --fg: #a7b1b3;
+  --fg-low: #6d787b;
+
+  /* accent = signal cyan (diagnostics readout) */
+  --accent: #3fbdb2;
+  --accent-bright: #5fe6d8;
+  --accent-deep: #2b8c84;
+
+  /* semantic poles used by charts/lanes */
+  --good: #4bbf87;
+  --good-soft: #10281d;
+  --amber: #d9a94a;
+  --amber-soft: #322916;
+  --bad: #e8705f;
+  --bad-soft: #331612;
+
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-text: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: var(--font-text);
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --fs-display: clamp(2.25rem, 4.6vw, 3.5rem);
+  --fs-h2: clamp(1.55rem, 2.6vw, 2rem);
+  --fs-h3: clamp(1.1rem, 1.5vw, 1.3rem);
+  --fs-lead: clamp(1.05rem, 1.2vw, 1.2rem);
+  --fs-body: 1rem;
+  --fs-sm: 0.9375rem;
+  --fs-meta: 0.8125rem;
+
+  --lh-display: 1.12;
+  --lh-head: 1.15;
+  --lh-tight: 1.4;
+  --lh-body: 1.6;
+
+  --w-display: 600;
+  --w-head: 600;
+  --w-body: 400;
+  --w-emph: 600;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --gutter: clamp(1.25rem, 4.5vw, 3.5rem);
+  --section-y: clamp(3.5rem, 8vh, 5rem);
+  --measure: 66ch;
+  --max-text: 42rem;
+  --max-page: 68rem;
+
+  --radius-2: 3px;
+  --dur-base: 200ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-base: 1ms;
+  }
+}

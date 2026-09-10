@@ -1,0 +1,19 @@
+/* Chart poles on the editorial palette.
+   Green = cheap / cache hit / savings. Amber = frontier / waste / miss. Blue = UI accent. */
+:root {
+  --chart-grep: var(--good);
+  --chart-vector: var(--amber);
+  --chart-neutral: var(--bg-sunk);
+
+  --chart-1: var(--chart-grep);
+  --chart-2: var(--chart-vector);
+  --chart-3: var(--accent);
+  --chart-4: var(--fg-low);
+  --chart-5: var(--bad);
+
+  --chart-background: var(--bg-sunk);
+  --chart-foreground: var(--fg-hi);
+  --chart-foreground-muted: var(--fg-low);
+  --chart-label: var(--fg-low);
+  --chart-grid: var(--line-hairline);
+}
